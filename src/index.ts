@@ -11,19 +11,20 @@ export const urlBase: string = 'https://s3-eu-west-1.amazonaws.com/archer-smartc
 export const masterWallet = '0x6c0a14f7561898b9ddc0c57652a53b2c6665443e';
 export let walletA: EthereumWallet;
 
+const host: string = 'hancock-sandbox.kickstartteam.es';
 export const config: any = {
   adapter: {
-    host: 'https://kong-hancock-develop.kickstartteam.es',
+    host: `https://${host}`,
     port: '443',
     base: '/v4/dlt-adapter',
   },
   wallet: {
-    host: 'https://kong-hancock-develop.kickstartteam.es',
+    host: `https://${host}`,
     port: '443',
     base: '/v4/wallet-hub',
   },
   broker: {
-    host: 'wss://kong-hancock-develop.kickstartteam.es',
+    host: `wss://${host}`,
     port: '443',
     base: '/v4/dlt-broker',
   },
